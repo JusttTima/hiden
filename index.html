@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<style type="text/css">
+		.box1 {
+			background: red;
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			top: 620px;
+			left: 365px;
+
+		}
+
+
+		.box2 {
+			background-image: url("chico.jpg");
+			background-size: 100% 100%;
+
+			height: 100px;
+			width: 100px;
+			position: absolute;
+			top: 910px;
+			left: 1525px;
+		}
+
+
+
+		.box3 {
+
+			background: black;
+			height: 55px;
+			width: 55px;
+			position: absolute;
+			top: 780px;
+			left: 770px;
+
+		}
+
+		.box4 {
+
+			background: pink;
+			height: 80px;
+			width: 80px;
+			position: absolute;
+			top: 580px;
+			left: 1300px;
+		}
+
+		.box5 {
+
+			background: yellow;
+			height: 60px;
+			width: 60px;
+			position: absolute;
+			top: 242px;
+			left: 520px;
+		
+		}
+
+		.box6 {
+
+			background: grey;
+			height: 60px;
+			width: 60px;
+			position: absolute;
+			top: 125px;
+			left: 1050px;
+		
+		}
+
+
+		.body {
+
+			background-image: url("hideobj.jpg");
+			background-size: cover;
+		}
+
+
+		.panel {
+			background: orange;
+			height: 300px;
+			width: 200px;
+
+			position: absolute;
+			top: 20px;
+			left: 5px;
+		}
+	</style>
+
+</head>
+<body class="body">
+	<div class="panel" style="height: 600px;">
+		<div class="d-flex">
+			<h1 style="font-size: 20px;">Очки:<span class="point">0<span></h1>
+			<h1 style="font-size: 20px; margin-left: 30px;">Max: 6</h1>
+		</div>
+		
+			<h1>Who is mogging you ?</h1>
+			<div class="d-flex">
+				<p class="red">Jordan Barret</p>
+			<img src="jordan.webp" style="width: 50px; height: 50px;">
+			</div>
+
+			
+			<div class="d-flex" style="margin-top: 10px;">
+				<p class="blue">Francisko Lachowski</p>
+			<img src="chico.jpg" style="width: 50px; height: 50px;">
+			</div>
+
+			
+			<div class="d-flex" style="margin-top: 10px">
+				<p class="black">Erand ...</p>
+			<img src="erandmog.webp" style="width: 50px; height: 50px; margin-left: 25px;">
+			</div>
+
+			<div class="d-flex" style="margin-right: 10px;">
+				<p class="pink">Adriana Lima (for girl)</p>
+
+			<img src="limaad.jpg" style="width: 50px; height:50px; margin-left: 25px;">
+			</div>
+
+			<div class="d-flex" style="margin-right: 10px;">
+				<p class="yellow">K SHAMI</p>
+
+			<img src="kshami.jpg" style="width: 50px; height:50px; margin-left: 25px;">
+			</div>
+
+			<div class="d-flex" style="margin-right: 10px;">
+				<p class="grey" style="margin-top: 15px ">Di Caprio🤑</p>
+
+			<img src="leocaprio.png" style="width: 60px; height:60px; margin-left: 25px; margin-top: 15px;">
+			</div>
+
+
+	</div>
+<div class="box1">
+	<img src="jordan.webp" style="width: 70px; height: 70px">
+</div>
+
+
+<div class="box2">
+	<img src="chico.jpg" style="width: 100px; height: 100px">
+</div>
+
+
+<div class="box3">
+	<img src="erandmog.webp" style="width: 55px; height: 55px;">
+</div>
+
+<div class="box4">
+	<img src="limaad.jpg" style="width: 80px; height: 80px;">
+</div>
+
+<div class="box5">
+	<img src="kshami.jpg" style="width: 60px; height: 60px;">
+</div>
+
+<div class="box6">
+	<img src="leocaprio.png" style="width: 80px; height: 80px;">
+</div>
+
+
+
+
+
+<script type="text/javascript">
+	let score = 0;
+
+
+	document.querySelector(".box1").onclick = function() {
+		score = score + 1;
+		document.querySelector(".box1").style.display = "none"
+		document.querySelector(".point").innerHTML = score;
+		document.querySelector(".red").style.textDecoration = "line-through"
+	}
+
+ 
+ 	document.querySelector(".box2").onclick = function() {
+		score = score + 1;
+		document.querySelector(".box2").style.display = "none"
+		document.querySelector(".point").innerHTML = score;
+		document.querySelector(".blue").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box3").onclick = function() {
+		score = score + 1;
+		document.querySelector(".box3").style.display = "none"
+		document.querySelector(".point").innerHTML = score;
+		document.querySelector(".black").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box4").onclick = function() {
+		score = score + 1;
+		document.querySelector(".box4").style.display = "none"
+		document.querySelector(".point").innerHTML = score;
+		document.querySelector(".pink").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box5").onclick = function() {
+		score = score + 1;
+		document.querySelector(".box5").style.display = "none"
+		document.querySelector(".point").innerHTML = score;
+		document.querySelector(".yellow").style.textDecoration = "line-through"
+	}
+
+	document.querySelector(".box6").onclick = function() {
+		score = score + 1;
+		document.querySelector(".box6").style.display = "none"
+		document.querySelector(".point").innerHTML = score;
+		document.querySelector(".grey").style.textDecoration = "line-through"
+	}
+
+
+</script>
+</body>
+</html>
